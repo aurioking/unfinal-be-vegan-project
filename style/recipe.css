@@ -1,0 +1,186 @@
+:root {
+  --main-color: #234f33;
+  --text-color: #fff;
+  --hover-color: rgba(255, 255, 255, 0.5);
+  --big-font: 2.8rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 70px 17%;
+  background-color: var(--main-color);
+}
+
+/* Navigation Bar Style Start */
+header {
+  background-color: var(--main-color);
+}
+
+header .navbar-brand {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+header .navbar-brand:hover {
+  color: var(--text-color);
+}
+
+header .navbar-brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#navbarNav a {
+  color: var(--text-color);
+}
+
+#navbarNav a:hover {
+  color: var(--hover-color);
+}
+
+header .navbar-toggler {
+  border: none;
+}
+
+header .navbar-toggler-icon {
+  background-image: url("../assets/icons/white_hamburger_menu_icon.jpg");
+  background-size: cover;
+}
+
+header .navbar-toggler:focus,
+header .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+/* Navigation Bar Style End */
+
+/* Section Video Style Start */
+.recipe-title {
+  font-size: var(--h2-font);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.breadcrumb-item a,
+.breadcrumb-item.active {
+  color: var(--text-color) !important;
+}
+
+.breadcrumb-item.active {
+  font-weight: bold;
+}
+
+.breadcrumb-item::before {
+  color: var(--text-color) !important;
+}
+.embed-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* Rasio aspek 16:9 (9/16 * 100) */
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Section Video Style End */
+
+/* Section Detail Card Style Start */
+.recipe-details {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  text-align: -webkit-center;
+}
+
+.recipe-details .card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  max-width: 250px; /* lebar maksimal card */
+  margin-bottom: 1rem; /* jarak antara card */
+  min-height: 20rem;
+}
+
+.recipe-details .card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-details .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.recipe-details .card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-details .card-list li {
+  display: flex;
+  font-size: var(--p-font);
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.recipe-details .card-list li i {
+  margin-right: 0.5rem;
+}
+
+.recipe-details .card-list li:last-child {
+  margin-bottom: 0;
+}
+/* Section Detail Card Style End */
+
+/* Section Step by Step Style Start */
+.step-by-step {
+  padding: 0;
+}
+
+.step-by-step .card {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step-by-step .card-body {
+  padding: 2rem;
+}
+
+.step-by-step .card-title {
+  font-size: var(--h2-font);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.step-by-step ol {
+  padding-left: 1.5rem;
+  font-size: var(--p-font);
+}
+
+.step-by-step ol li {
+  margin-bottom: 1rem;
+}
+
+
+/* Section Step by Step Style End */

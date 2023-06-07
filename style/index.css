@@ -1,0 +1,314 @@
+:root {
+  --main-color: #234f33;
+  --text-color: #fff;
+  --hover-color: rgba(255, 255, 255, 0.5);
+  --big-font: 2.8rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 70px 17%;
+  background-color: var(--main-color);
+}
+
+/* Navigation Bar Style Start */
+header {
+  background-color: var(--main-color);
+}
+
+header .navbar-brand {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+header .navbar-brand:hover {
+  color: var(--text-color);
+}
+
+header .navbar-brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#navbarNav a {
+  color: var(--text-color);
+}
+
+#navbarNav a:hover {
+  color: var(--hover-color);
+}
+
+header .navbar-toggler {
+  border: none;
+}
+
+header .navbar-toggler-icon {
+  background-image: url("../assets/icons/white_hamburger_menu_icon.jpg");
+  background-size: cover;
+}
+
+header .navbar-toggler:focus,
+header .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+/* Navigation Bar Style End */
+
+/* Home Section Style Start */
+.home-text h1 {
+  font-size: var(--big-font);
+  color: var(--text-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home-text h2 {
+  font-size: var(--h2-font);
+  color: var(--text-color);
+  margin: 5px 0 40px;
+}
+
+.home-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  background: var(--text-color);
+  color: var(--main-color);
+  margin-bottom: 18px;
+}
+
+.home-text .btn:hover {
+  background: var(--hover-color);
+  color: var(--text-color);
+}
+/* Home Section Style End */
+
+/* About Section Style Start */
+.about {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 2rem;
+}
+
+.about-img img {
+  max-width: 100%;
+  width: 20rem;
+  height: auto;
+}
+
+.about-text span {
+  font-size: var(--big-font);
+  font-weight: bold;
+}
+
+.about-text p {
+  margin: 0.8rem 0 1.8rem;
+  font-weight: lighter;
+  line-height: 1.7;
+  font-size: var(--p-font);
+  text-align: justify;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%; /* Rasio aspek 16:9 (9/16 * 100) */
+  margin-top: 1.5rem;
+}
+
+.video-container iframe {
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* About Section Style End */
+
+/* Menu Section Style Start */
+.card-section {
+  background-color: var(--main-color);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.text-center {
+  color: var(--text-color);
+  font-size: var(--h2-font);
+  margin-bottom: 2rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: var(--text-color);
+}
+
+.card-text {
+  margin-top: 1rem;
+  color: var(--main-color);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body h3 {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.card-body .btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: var(--text-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-body .btn:hover {
+  background-color: rgb(35, 79, 51, 0.9);
+  color: var(--text-color);
+}
+
+.btn.contact-us {
+  width: 10rem;
+}
+/* Menu Section Style End */
+
+/* Contact us Section Style Start */
+.contact-us-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.contact-us {
+  width: 100%;
+}
+/* Contact us Section Style Start */
+
+/* Footer Section Style Start */
+.footer {
+  background-color: var(--main-color);
+  padding: 1.5rem 0;
+}
+
+.footer p {
+  font-size: 10px;
+  color: var(--text-color);
+  font-weight: lighter;
+}
+/* Footer Section Style End */
+
+/* Popup Style Start */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--text-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup-message {
+  margin-bottom: 20px;
+}
+
+.popup-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.popup-button:hover {
+  background-color: rgb(35, 79, 51, 0.9);
+}
+/* Popup Style End */
+
+/* Scroll to Top btn Style Start*/
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#scroll-to-top:hover {
+  opacity: 1;
+}
+
+#scroll-to-top img {
+  width: 50%;
+  height: 50%;
+}
+/* Scroll to Top btn Style End */
